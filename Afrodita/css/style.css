@@ -5,32 +5,39 @@
          url('../fonts/gora-free-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'open_sansbold';
     src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
          url('../fonts/opensans-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'open_sanslight';
     src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
          url('../fonts/opensans-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
-
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'open_sanslight_italic';
     src: url('../fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
          url('../fonts/opensans-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-weight: 300;
+    font-style: italic;
+    font-display: optional;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
