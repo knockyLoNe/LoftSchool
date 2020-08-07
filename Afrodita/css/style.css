@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'gora_free';
-    src: url('../fonts/gora-free-webfont.woff2') format('woff2'),
-         url('../fonts/gora-free-webfont.woff') format('woff');
+    src: url('/Afrodita/fonts/gora-free-webfont.woff2') format('woff2'),
+         url('/Afrodita/fonts/gora-free-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: optional;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'open_sansbold';
-    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    src: url('/Afrodita/fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('/Afrodita/fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: optional;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'open_sanslight';
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-light-webfont.woff') format('woff');
+    src: url('/Afrodita/fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('/Afrodita/fonts/opensans-light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: optional;
@@ -28,16 +28,203 @@
 
 @font-face {
     font-family: 'open_sanslight_italic';
-    src: url('../fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-lightitalic-webfont.woff') format('woff');
+    src: url('/Afrodita/fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('/Afrodita/fonts/opensans-lightitalic-webfont.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: optional;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
+
+/* Header */
+
+.main-header {
+    margin-bottom: 75px;
+    background-color: #000000;
+}
+
+.logotype {
+    width: 200px;
+}
+
+.logo-text {
+    font-family: 'gora_free';
+    color: #f89513;
+    font-size: 18px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.main-navigation {
+    font-family: 'open_sansbold';
+    font-size: 14px;
+    line-height: 20px; 
+
+    width: 380px;
+}
+
+.site-navigation {
+    list-style-type: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #f89513;
+}
+
+.contacts {
+    width: 200px;
+}
+
+.contacts p {
+    font-family: 'open_sansbold';
+    font-size: 21px;
+    color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+}
+
+.contacts a {
+    font-family: 'open_sansbold';
+    text-decoration: underline;
+    color: #f89513;
+    font-size: 14px;
+}
+
+.main-nav-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-nav-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .main-header-nav {
+    display: flex;
+    flex-direction: column;
+} */
+
+.fig {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/* Features */
+.black-bg {
+    background-color: #000000;
+} 
+
+.black-bg h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'open_sansbold';
+    font-size: 49px;
+    text-transform: uppercase;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: 0;
+    ;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+
+.feature-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+    text-align: center;
+    color: #ffffff;
+    list-style: none;
+}
+
+
+/* Блок новости */
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news h2 {
+    text-align: center;
+    font-family: 'open_sansbold';
+    font-size: 49px;
+    text-transform: uppercase;
+}
+
+.last-news {
+    width: 880px;
+}
+
+.last-news__item {
+    list-style: none;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.last-news__item:last-child {
+    border-bottom: none;
+}
+
+.news-block__img {
+ display: inline-block;
+}
+
+.news-block__text {
+    display: inline-block;
+    width: 650px;
+}
+
+.top-news {
+    width: 160px;
+}
+
+
+
 

@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="/Afrodita/css/normalize.css" rel="stylesheet">
+    <link href="/Afrodita/css/style.css" rel="stylesheet">
     <title>Afrodita Fitness Club</title>
     
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-        <p>Афродита</p>
-        <nav>
+    <header class="main-header">
+        
+        <div class="main-nav-wrapper">
+        <div class="container">
+            <div class="logotype">
+            <p class="logo-text">Афродита</p>
+            </div>
+        <nav class="main-navigation">
             
-            <ul>
-                <li>Главная</li>
+            <ul class="site-navigation">
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="comments.html">Отзывы</a></li>
                 <li><a href="services.html">Услуги</a></li>
             </ul>
@@ -23,69 +30,96 @@
             <a href="#">График работы</a>
         </div>
         </div>
+        </div>  
     </header>
     
 
 
-    <main>
-        <h1>Фитнес клуб Афродита</h1>
-        <!-- Тут будет банер -->
+    <main class="container">
+        <h1 class="visually-hidden">Фитнес клуб Афродита</h1>
+        
+        <img class="fig" src="/Afrodita/img/Image.png" alt="Банер Клуба">
 
-        <section>
+        <section class="black-bg">
         <h2>Особенности</h2>
         
-        <ul>
-            <li>Уникальность</li>
+        <div class="feature-list-wrapper">
+        <ul class="feature-list">
+            <p>Уникальность</p>
             <p>Мы делаем все для вашего комфорта</p>
-               <ul> 
-                <li>Питание включено</li>
-                <li>Багаж 5 кг.</li>
-                <li>Душ/Баня</li>
-                </ul>
-            
-            <li>Премиум-класс</li>
-            <p>Наш зал оборудован тренажерами А-класса</p>
-            <ul>
-                <li>Качество</li>
-                <li>Продуктивность</li>
-                <li>Результат</li>
-            </ul>
-
-            <li>Личный тренр</li>
-            <p>Тренер делает все для вашего результата</p>
-            <ul>
-                <li>Программа</li>
-                <li>Питание</li>
-                <li>План тренировок</li>
-            </ul>
+            <li>Питание включено</li>
+            <li>Багаж 5 кг.</li>
+            <li>Душ/Баня</li>
         </ul>
+        <ul class="feature-list">
+            <p>Премиум-класс</p>
+            <p>Наш зал оборудован тренажерами А-класса</p>
+            <li>Качество</li>
+            <li>Продуктивность</li>
+            <li>Результат</li>
+        </ul>
+        <ul class="feature-list">
+            <p>Личный тренер</p>
+            <p>Тренер делает все для вашего результата</p>
+            <li>Программа</li>
+            <li>Питание</li>
+            <li>План тренировок</li>
+        </ul>
+        </div>
+
         </section>
 
-        <section>
+        <section class="news">
             <h2>Последние новости</h2>
-            <ul>
-                <li>
+            <div class="index-columns">
+            <section class="last-news">
+            <ul class="last-news__list">
+                <li class="last-news__item">
+                    <div class="news-block__img">
+                    <img src="/Afrodita/img/Layer 6.png" alt="картинка новости" width="150" height="150">
+                    </div>
+                    <div class="news-block__text">
                     <time datetime="2016-10-12">12.10.2016</time>
                     <p>Похудение с помощью бодибилдинга</p>
                     <p>Вдыхание одного литра кислорода эквивалентно «сжиганию» 5 калорий, 
                         однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. 
                         Это крайне важно для каждого начинающего атлета.</p>
+                    </div>
                 </li>
 
-                <li>
+                <li class="last-news__item">
+                    <div class="news-block__img">
+                    <img src="/Afrodita/img/Layer 7.png" alt="картинка новости" width="150" height="150">
+                    </div>
+                    <div class="news-block__text">
                     <time datetime="2016-02-01">01.02.2016</time>
                     <p>Заражай друзей, получай призы</p>
                     <p>Дополнительно для Вас: пользование сауной и предоставление средств личной гигиены, пользование баром, 
                         таблица замеров, дружеская атмосфера и постоянная поддержка. Мы запотимся о вашем комфорте и предлагаем испытать это уже сегодня!</p>
+                    </div>
                 </li>
 
-                <li>
+                <li class="last-news__item">
+                    <div class="news-block__img">
+                    <img src="/Afrodita/img/Layer 9.png" alt="картинка новости" width="150" height="150">
+                    </div>
+                    <div class="news-block__text">
                     <time datetime="2015-22-12">22.12.2015</time>
                     <p>Фрилансер? Выпрями спину!</p>
                     <p>Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. 
                         Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора! </p>
+                    </div>
                 </li>
             </ul>
+            </section>
+            <section class="top-news">
+            <h3>Топ новостей</h3>
+            <p>За сентябрь</p>
+            <img src="/Afrodita/img/Layer 10.png">
+            <img src="/Afrodita/img/Layer 11.png">
+            <img src="/Afrodita/img/Layer 12.png">
+            </section>
+            </div>
         </section>
         <ul class="pagination-list">
             <li class="pagination-item-current"><a>1</a></li>
