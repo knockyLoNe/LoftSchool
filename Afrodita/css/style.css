@@ -70,6 +70,9 @@ body {
 
 .logotype {
     width: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .logo-text {
@@ -77,6 +80,7 @@ body {
     color: #f89513;
     font-size: 18px;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -88,15 +92,24 @@ a {
     font-family: 'open_sansbold';
     font-size: 14px;
     line-height: 20px; 
-
+    text-transform: uppercase;
     width: 380px;
+    margin-top: 33px;
+    margin-bottom: 30px;
 }
 
 .site-navigation {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     
     margin: 0;
     padding: 0;
+}   
+
+.site-navigation span {
+    margin-left: 15px;
 }
 
 .site-navigation a:hover,
@@ -104,8 +117,15 @@ a {
     color: #f89513;
 }
 
+.site-navigation svg:focus,
+.site-navigation svg:hover {
+    fill: #f89513;
+}
+
 .contacts {
-    width: 200px;
+    width: 160px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .contacts p {
@@ -122,6 +142,7 @@ a {
     text-decoration: underline;
     color: #f89513;
     font-size: 14px;
+    margin-left: 46px;
 }
 
 .main-nav-wrapper {
@@ -165,7 +186,7 @@ a {
     padding-top: 64px;
     padding-bottom: 64px;
     margin: 0;
-    ;
+    letter-spacing: 2.6px;
 }
 
 .features-list {
@@ -182,7 +203,62 @@ a {
     text-align: center;
     color: #ffffff;
     list-style: none;
+    padding-bottom: 84px;
 }
+
+.features-circle {
+    width: 70px;
+    height: 70px;
+
+    background-color: #f89513;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+.features-circle__unique {
+    background-image: url(/Afrodita/img/flower.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.features-circle__vip {
+    background-image: url(/Afrodita/img/mark-as-favorite-star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.features-circle__trainer {
+    background-image: url(/Afrodita/img/painter-palette.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-list__header {
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 10.78px;
+    letter-spacing: 3px;
+    margin-left: 6px;
+    text-transform: uppercase;
+}
+
+.feature-list-desc {
+    font-family: 'open_sanslight';
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.feature-item {
+    font-family: 'open_sanslight';
+    font-size: 16px;
+    line-height: 2.2;
+    letter-spacing: 1.3px;
+    text-align: left; 
+}
+
 
 
 /* Блок новости */
@@ -197,15 +273,24 @@ a {
     font-family: 'open_sansbold';
     font-size: 49px;
     text-transform: uppercase;
+    letter-spacing: 2.6px;
 }
 
 .last-news {
-    width: 880px;
+    width: 900px;
+    padding: 0;
+    margin: 0;
+}
+
+.last-news__list {
+    padding: 0;
+    margin: 0;
 }
 
 .last-news__item {
     list-style: none;
     border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 35px;
 }
 
 .last-news__item:last-child {
@@ -213,18 +298,200 @@ a {
 }
 
 .news-block__img {
- display: inline-block;
+    padding-left: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
+
+
 
 .news-block__text {
     display: inline-block;
-    width: 650px;
+    width: 680px;
+    margin: 0;
+    margin-left: 20px;
+    vertical-align: bottom;
+    margin-bottom: 19px;
+}
+
+.news-block__text p {
+    font-size: 18px;
+}
+
+.news-block__heading {
+    font-family: Roboto;
+    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+time {
+    font-size: 14px;
 }
 
 .top-news {
     width: 160px;
 }
 
+.top-news h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.top-news p {
+    text-transform: uppercase;
+    color: #656464;
+    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    margin-top:10px;
+}
+
+.top-news img {
+    margin-bottom: 20px;
+}
 
 
+.pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
 
+.pagination-item_list {
+    color: #6f6e6e;
+    margin-right: 20px;
+}
+
+.pagination-item a {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 18px;
+}
+
+.pagination-item-current {
+    width: 25px;
+    height: 25px;
+
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 20px;
+
+    border-radius: 5px;
+    background-color: #27273e;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    color: #f9ad5f;
+}
+
+.pagination-item-current:hover,
+.pagination-item-current:focus {
+    background-color: #000000;
+    color: #f9ad5f;
+}
+
+.pagination-item:nth-child(9) {
+    margin-right: 20px;
+}
+
+
+/* Footer */
+
+.main-footer {
+    margin-top: 65px;
+    background-color:#000000;
+}
+
+.main-footer-wrapper {
+    width: 100%;
+    background-color: black;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    width: 290px;
+    margin: 0;  
+    color: #ffffff 
+}
+
+.footer-contacts a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    color: #f89513;
+}
+
+.footer-contacts p {
+    font-family: 'open_sanslight';
+    font-size: 14px;
+}
+
+.footer-logo {
+    width: 200px;
+    font-family: 'gora_free';
+    color: #f89513;
+    font-size: 18px;
+    margin: 0;  
+}
+
+.footer-social {
+    width: 195px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-social p {
+    font-family: 'open_sansbold';
+    font-size: 14px;
+    text-transform: uppercase;
+   
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 20px;
+    height: 20px;
+
+    background-color: #d0d0d0;
+
+    margin-right: 10px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #f89513;
+}
