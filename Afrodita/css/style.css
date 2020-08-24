@@ -549,15 +549,17 @@ time {
     font-size: 49px;
     font-family: 'open_sansbold';
     margin-top: 18px;
-    margin-left: 125px;
+    margin-left: 110px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
 }
 
 .breadcrumbs {
     display: flex;
+    
     width: 135px;
-    margin-left: 90px;
+    padding: 0;
+    margin-left: 110px;
 }
 
 .breadcrumbs li {
@@ -751,4 +753,158 @@ time {
 .form__radiobutton {
 display: flex;
 justify-content: space-between;
+}
+
+/* Services page */
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.services-item {
+    width: 250px;
+}
+
+.services-item p {
+    font-family: open_sanslight;
+    font-size: 14.02px;
+    line-height: 20px;
+    color: #bcbcbc;
+
+    margin-bottom: 50px;
+}
+
+.services-item h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.services-header {
+    font-size: 49px;
+    font-family: 'open_sansbold';
+    margin-top: 18px;
+    margin-left: 110px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.partners-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.partners-item {
+    display: flex;
+    align-items: center;
+    width:250px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.parners-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.flamingo-black {
+    background-image: url(/Afrodita/img/flamingo-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.flamingo-black:hover,
+.flamingo-black:focus {
+    background-image: url(/Afrodita/img/flamingo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.malibu-black {
+    background-image: url(/Afrodita/img/malibu-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.malibu-black:hover,
+.malibu-black:focus {
+    background-image: url(/Afrodita/img/malibu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.lion-black {
+    background-image: url(/Afrodita/img/lion-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lion-black:hover,
+.lion-black:focus {
+    background-image: url(/Afrodita/img/lion.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.arni-black {
+    background-image: url(/Afrodita/img/arni-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arni-black:hover,
+.arni-black:focus {
+    background-image: url(/Afrodita/img/arni.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.grif-black {
+    background-image: url(/Afrodita/img/grif-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grif-black:hover,
+.grif-black:focus {
+    background-image: url(/Afrodita/img/grif.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.atletiko-black {
+    background-image: url(/Afrodita/img/atletiko-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.atletiko-black:hover,
+.atletiko-black:focus {
+    background-image: url(/Afrodita/img/atletiko.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
