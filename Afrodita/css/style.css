@@ -204,6 +204,9 @@ a {
     color: #ffffff;
     list-style: none;
     padding-bottom: 84px;
+
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .features-circle {
@@ -494,4 +497,258 @@ time {
 .social-button:hover,
 .social-button:focus {
     background-color: #f89513;
+}
+
+/* Comments paage */
+
+.wrapper-info {
+    width: 1100px;
+    height: 176px;
+
+    background-image: url(/Afrodita/img/bakground.info.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper-info p {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.wrapper-info a {
+    color: #f89513;
+    font-weight: bold;
+}
+
+.avatar-place {
+    width: 160px;
+    height: 160px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+
+    background-image: url(/Afrodita/img/feedback3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feedback-wrapper {
+    margin-left: 108px;
+    margin-right: 108px;
+}
+
+.news-block-img2 {
+    margin-bottom: 39px;
+}
+
+.feedback-header {
+    font-size: 49px;
+    font-family: 'open_sansbold';
+    margin-top: 18px;
+    margin-left: 125px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.breadcrumbs {
+    display: flex;
+    width: 135px;
+    margin-left: 90px;
+}
+
+.breadcrumbs li {
+    list-style: none;
+    font-family: 'open_sanslight_italic';
+}
+
+.breadcrumbs__list-link {
+    color: #f9aa42;
+    text-decoration: underline;
+}
+
+.breadcrumbs__list::after {
+    content: "/";
+    color: #666464;
+    opacity: .8;
+    font-family: 'open_sanslight_italic';
+    margin-left: 5px;
+}
+
+.breadcrumbs__list-active {
+    text-decoration: none;
+    color: #666464;
+    margin-left: 5px;
+}
+
+/* Form */
+
+.form__comments {
+    max-width: 561px;
+    border-radius: 3px;
+    background: #f5f5f5;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    font-family: open_sanslight;
+    padding: 42px 70px 50px 70px; 
+}
+
+.form__title {
+    font-size: 49px;
+    font-family: 'open_sansbold';
+}
+
+
+.form__input--field {
+    width: 270px;
+    height: 45px; 
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.form__input {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.form__input--field {
+    box-sizing: border-box;
+}
+
+.form__input--field:focus {
+    border: 0.5px solid #f9aa42;
+}
+
+.form__input--message:focus {
+    border: 0.5px solid #f9aa42;
+}
+
+.form__input:first-child {
+    margin-right: 16px;
+}
+
+.form__inputs {
+    margin-bottom: 18px;
+}
+
+.form__input--signature {
+    display: block;
+    font-weight: 600;
+    color: #3f3d3d;
+    margin-bottom: 6px;
+}
+
+.form__input--message {
+    width: 560px;
+    height: 90px;
+    border-radius: 3px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    letter-spacing: .3px;
+    resize: none;
+    color: #221f1f;
+}
+
+.form-input {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.radiobutton__radio--label {
+    margin-bottom: 9px;
+}
+
+.radiobutton__radio {
+    display: inline-block;
+}
+
+.radiobutton__button {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+}
+
+.button {
+    width: 125px;
+    height: 45px;
+    color: white;
+    background: #1c1f1d;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'open_sansbold';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #f9aa42;
+    cursor: pointer;
+}
+
+.label--radio {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+    color: red;
+    background: red;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+.radio:checked ~ .radio__text {
+    color: #f89513;
+}
+
+.label--radio:last-child {
+    margin-left: 18px;
+}
+
+.radio__styles {
+    background: url(/Afrodita/img/Ellipse2.png) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 4px;
+}
+
+.radio:checked ~ .radio__styles {
+    background: url(/Afrodita/img/Ellipse3.png) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 4px;
+}
+
+
+.radio__text {
+    display: inline-block;
+    vertical-align: 4px;
+}
+
+.form__radiobutton {
+display: flex;
+justify-content: space-between;
 }
