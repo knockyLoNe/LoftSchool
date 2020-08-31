@@ -908,3 +908,67 @@ justify-content: space-between;
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
+#bg_popup{
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(/Afrodita/img/gym.png);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+      
+    #popup {
+    background-image: url(/Afrodita/img/big-logo.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    margin: 0 auto;
+    margin-top: 160px;
+    padding: 5px 20px 13px 20px;
+    
+    position: relative;
+    width: 210px;
+    height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    }
+      
+    .close{
+    display:block;
+    position:absolute;
+
+    width: 170px;
+    height: 46px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'open_sansbold';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 46px;
+    margin: 0 auto;
+    left: 40px;
+    top: 270px;
+
+    color:#fff;
+    background:#f89513;
+    cursor:pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+   
+    }
+    .close:hover {
+    background-color:#131415;
+    } 
